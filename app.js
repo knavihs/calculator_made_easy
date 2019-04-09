@@ -13,10 +13,10 @@ http.createServer(function (request, response) {
         html = fs.readFileSync("calculator.html", "utf8");
         response.write(html);
     } else if (pathname == "/lux.js") {
-        script = fs.readFileSync("script.js", "utf8");
+        script = fs.readFileSync("lux.js", "utf8");
         response.write(script);
     }
 
 
     response.end();
-}).listen(8888,()=>console.log("server conected"));
+}).listen(8888,()=>console.log("server connected"));
